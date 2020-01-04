@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\456.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\member.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\car.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script>
+	function next(obj,next) {  
+	    if (obj.value.length == obj.maxLength)  
+	        obj.form.elements[next].focus();     }  
+	</script> 
+
+
+
+	<title>購物車</title>
+</head>
+<body>
+	<!--HEAD start-->
+	<header>
+		<div id="header">
+			<a href="..\index.html">
+			 <img src="..\assets\img\shield.png" class="pic1">
+		    </a>
+		    <!--購物車 start--> 
+		    <a href="shopcar.html">
+		        <img src="..\assets\img\shopcar.png" class="piccar">
+		    </a>
+		    <!--會員登入 start-->
+            <div class="piclogin">
+		      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+		      	<img src="..\assets\img\member.png" class="picmember">
+		      </button>
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php" method="post">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				      <img src="..\assets\img\member.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container">
+				      <label for="uname"><b>使用者名稱</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>密碼</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit">登入</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> 記得我
+				      </label>
+				      <span class="psw">忘記 <a href="#">密碼?</a></span>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1">
+				      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取消</button>
+				       <button type="button" onclick="document.getElementById('id01').style.display='block'" class="signupbtn"> <a href="sign.html"style="color:white;">加入會員</a></button>
+					</div>
+				  </form>
+				</div>
+
+				<script>
+				// Get the modal
+				var modal = document.getElementById('id01');
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				    if (event.target == modal) {
+				        modal.style.display = "none";
+				    }
+				}
+				</script>
+				 <!--會員登入 END-->
+			</div>	
+    </header>
+    <!--head END-->
+
+    <div>
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+	  		  	<a class="nav-link" href="index.html">首頁</a>
+	  		  </li>
+			<li class="nav-item">
+	 	      	<a class="nav-link" href="member.html">會員</a>
+	 	      </li>
+	 	      <li class="nav-item">
+	 	      	<a class="nav-link" href="item.html">商品</a>
+	 	      </li>
+	  		  <li class="nav-item">
+	  		  	<a class="nav-link" href="aboutus.html">關於我們</a>
+	  		  </li>
+	  		  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				  <form class="form-inline" action="/action_page.php">
+				    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+				    <button class="tt" type="submit">Search</button>
+	              </form>
+             </nav>
+		</ul>
+	</div>
+	<div class="col-12 mb-3 cart">
+				<div class="container">
+					<h4 class="cart-tittle">購物車</h4>
+					 <table class="table-cart">
+                            <thead class="table-head">
+                                <tr>
+                                    <th scope="col" class="table-th">&nbsp;</th>
+                                    <th scope="col" class="table-th">圖片</th>
+                                    <th scope="col" class="table-th">名稱</th>
+                                    <th scope="col" class="table-th">價格</th>
+                                    <th scope="col" class="table-th">數量</th>
+                                    <th scope="col" class="table-th">總計</th>
+                                </tr>
+                            </thead>
+                         <div>   
+                            <tbody>	
+                                <tr>
+                                    <td class="table-td">
+                                       <button type="">X</button>
+                                    </td>
+                                    <td class="table-td">
+                                       <!--商品圖片-->
+                                    </td>
+                                    <td class="table-td">
+                                       <!--商品名稱-->
+                                    </td>
+                                    <td class="table-td">
+                                    	<!--商品價格-->
+                                    </td>
+                                    <td class="table-td">
+                                       <!--商品數量-->
+                                    </td>
+                                    <td class="table-td"><!--總計--></td>
+                                </tr>
+                                <tr>
+                                    <td class="table-td">
+                                         <button type="">X</button>
+                                    </td>
+                                    <td class="table-td">
+                                       <!--商品圖片-->
+                                    </td>
+                                    <td class="table-td">
+                                       <!--商品名稱-->
+                                    </td>
+                                    <td class="table-td">
+                                    	<!--商品價格-->
+                                    </td>
+                                    <td class="table-td">
+                                       <!--商品數量-->
+                                    </td>
+                                    <td class="table-td"><!--總計--></td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+					<hr>
+					<p style="color:black">Total <span class="price" style="color:black"><b><!--總共金額--></b></span></p>
+				</div>
+			</div>
+		
+			<div class="col-12">
+				<div class="container">
+					<form action="">
+						<div class="row">
+							<div class="col-50">
+								<h3>個人資料</h3>
+								<label for="fname"><i class="fa fa-user"></i>姓名</label>
+								<input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+								<label for="email"><i class="fa fa-envelope"></i> Email</label>
+								<input type="text" id="email" name="email" placeholder="john@example.com">
+								<label for="adr"><i class="fa fa-address-card-o"></i> 地址</label>
+								<input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+							</div>
+						
+							<hr class="container">
+							<div class="col-50">
+								<h3>付款方式(2擇1):</h3>							
+							
+							<div class="col-50">
+								<br><br><h3>線上付款(信用卡)</h3>
+								<label for="cname">卡片姓名:</label>
+								<input type="text" id="cname" siezname="cardname" placeholder="John More Doe">
+								<label for="ccnum">卡號:</label>
+							
+								<input type=text id="ccnum" name=pan_no1 size=4 value="" maxlength=4 onKeyUp="next(this,'pan_no2');">-
+								<input type=text id="ccnum" name=pan_no2 size=4 value="" maxlength=4 onKeyUp="next(this,'pan_no3');">-
+								<input type=text id="ccnum" name=pan_no3 size=4 value="" maxlength=4 onKeyUp="next(this,'pan_no4');">-
+								<input type=text id="ccnum" name=pan_no4 size=4 value="" maxlength=4 > 
+							</div>
+							<div class="col-50">
+								<h3>貨到付款:</h3>	
+								<label for="cname">7-11門市:</label>
+								<input type="text" id="cname" name="cardname" placeholder="桃園市中壢區中原店">
+								<label for="cname">全家門市:</label>
+								<input type="text" id="cname" name="cardname" placeholder="桃園市中壢區伯德店">						
+							</div>
+						</div>
+						</div>
+						<input align="center" type="submit" value="結帳" class="btn">
+					</form>
+				</div>
+			</div>
+	
+</body>
+</html>
