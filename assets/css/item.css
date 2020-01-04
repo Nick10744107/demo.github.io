@@ -1,0 +1,30 @@
+.grid-box {
+  		display: grid; 
+  		grid-template-columns: 350px 350px 350px; 
+		grid-gap: 30px 30px ;
+		position: absolute;
+		top: 30%;
+		left: 20%;
+
+	}
+	.item{
+		background-color:#93C5EE;
+		border-radius:10px;
+		width:300px;
+		height:450px;
+		text-align: center;
+	}
+
+	.mh1 {
+		width:140px;
+		height:60px;
+		background-color: #3EAFA5;
+		position: relative;
+		border: 1px solid rgba(0,0,0,0.5);
+		transition: all 0.5s linear;
+	}
+
+	.mh1:hover {
+		border-radius: 25px;
+		transition: all 0.5s linear;    
+	}
