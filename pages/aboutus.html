@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\456.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\member.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\about.css">
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<title>關於我們</title>
+	
+</head>
+<body>
+	<!--HEAD start-->
+	<header>
+		<div id="header">
+			<a href="..\index.html">
+			 <img src="..\assets\img\shield.png" class="pic1">
+		    </a>
+		    <!--購物車 start--> 
+		    <a href="shopcar.html">
+		        <img src="..\assets\img\shopcar.png" class="piccar">
+		    </a>
+		    <!--會員登入 start-->
+            <div class="piclogin">
+		      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+		      	<img src="..\assets\img\member.png" class="picmember">
+		      </button>
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php" method="post">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				      <img src="assets\img\member.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container">
+				      <label for="uname"><b>使用者名稱</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>密碼</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit"><a href="member.html" style="color: white">登入</a></button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> 記得我
+				      </label>
+				      <span class="psw">忘記 <a href="modify.html">密碼?</a></span>
+				    </div>
+				    <!--密碼錯誤 start-->
+                      <div class="alert alert-danger alert-dismissible" role="alert">
+                         <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> 密碼錯誤！
+                       </div>
+                    <!--密碼錯誤 end-->   
+				    <div class="container" style="background-color:#f1f1f1">
+				      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取消</button>
+				       <button type="button" onclick="document.getElementById('id01').style.display='block'" class="signupbtn"> <a href="sign.html"style="color:white;">加入會員</a></button>
+					</div>
+				  </form>
+				</div>
+
+				<script>
+				// Get the modal
+				var modal = document.getElementById('id01');
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				    if (event.target == modal) {
+				        modal.style.display = "none";
+				    }
+				}
+				</script>
+				 <!--會員登入 END-->
+			</div>	
+    </header>
+    <!--head END-->
+
+    <div>
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+	  		  	<a class="nav-link" href="../index.html">首頁</a>
+	  		  </li>
+			<li class="nav-item">
+	 	      	<a class="nav-link" href="member.html">會員</a>
+	 	      </li>
+	 	      <li class="nav-item">
+	 	      	<a class="nav-link" href="item.html">商品</a>
+	 	      </li>
+	  		  <li class="nav-item">
+	  		  	<a class="nav-link" href="aboutus.html">關於我們</a>
+	  		  </li>
+	  		  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				  <form class="form-inline" action="/action_page.php">
+				    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+				    <button class="btn btn-success" type="submit">Search</button>
+	              </form>
+             </nav>
+		</ul>
+	</div>
+	<div >
+		<div class="member1">
+			<img src="..\assets\img\nick.jpg" class="myselfpic">
+		<div class="experience">
+			<font size="5"><strong>前端設計-張仲均</strong></font><br>
+			<strong>我覺得這一次期末專案的困難度和期中的差很多，期中專案是四個一起合力完成一份作品，也還不需要後端的加入，但是到了期末就不同了，加入了後端，前端的網頁設計變成只有2個人在操作，讓我覺得工作量變得非常多，而且我本身也不太清楚後端可以做甚麼樣的東西，所以就必須要不斷的溝通，達到前後端都可以接受的設計，不過也因為這樣子讓我對前端設計的技巧更佳的熟練，我覺得我比期中時候的我更加清楚關於程式碼的設計以及網頁的編排，希望下學期學習寫後端，能夠更加得明白往又是怎麼寫出來的。</strong><br>
+			<a href="https://www.instagram.com/zhong_jun0309/"><img src="..\assets\img\IG.jfif" class="ig"></a>
+		</div> 
+		</div>
+		
+		<div class="member2">
+			<img src="..\assets\img\yang.jpg" class="myselfpic">
+		<div class="experience">
+			<font size="5"><strong>前端設計-陳宇揚</strong></font><br>
+			<strong>這次的期末專案比起期中困難許多，從四個人純粹進行前端作業，變成兩人小組搭檔後端的夥伴，由於沒學過後端，所以很多時候，我們會不了解彼此負責到哪些部分，就必須進行大量的溝通，也許我們在前端可行的辦法，到了後端可能就是死的東西，所以要找到兩邊都可以適用的方法，因為這個緣故讓我學到更多解決問題的工具，也對前端有更進一步的了解，感謝伙伴們的強力支援，下學期開始接觸後端，做起來應該會比較輕鬆。</strong><br>
+			<a href="https://www.instagram.com/yang_jason2/"><img src="..\assets\img\IG.jfif" class="ig"></a>
+		</div>
+		</div>
+
+		<div class="member1">
+			<img src="..\assets\img\peng.jpg" class="myselfpic">
+		<div class="experience">
+			<font size="5"><strong>後端設計-彭柏豪</strong></font><br>
+			<strong>大一剛進資管系時，對於這個科系的理解就是，瘋狂寫程式，一直寫一直寫。對於程式這兩個字，當初的我也是充滿的誤解，以為程式就是用來寫各種引擎，遊戲引擎也好啊，3D引擎也好，未來肯定是寫這個的。但大二過後，網程課開始教我們一點點的網頁架設，課程都圍繞著學習架一個網頁各種方法與技巧，此時的我才恍然大悟，原來我們所寫的程式，是如此貼近於日常生活，期末的購物網站，更是精進了我們的程式能力，我們在這個過程學到了很多。</strong><br>
+			<a href="https://www.instagram.com/peng_890211/"><img src="..\assets\img\IG.jfif" class="ig"></a>
+		</div>
+		</div>
+
+		<div class="member2">
+			<img src="..\assets\img\harry.jpg" class="myselfpic">
+		<div class="experience">
+			<font size="5"><strong>後端設計-黃湧威</strong></font><br>
+			<strong>在期中以前，我還以為期末報告要花的時間不是太長，沒想到真的開始做了才發現時間根本不夠用，有太多的地方要和前端討論，也有太多的情況要設想到，其中我覺得最麻煩的就是版本控制，每一次修改完的網頁，如果沒分開放，又會和舊的網頁混在一起，持續一段時間之後，整個資料夾都是「XXX2」、「YYY-real」之類的檔案，難以辨識出哪個才是最新的，這才知道為甚麼軟體都要分版本，經過這次的經驗，下次應該就能做得更好了。</strong><br>
+			<a href="https://www.instagram.com/hr98719/"><img src="..\assets\img\IG.jfif" class="ig"></a>
+		</div>
+		</div>		
+	
+		<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.268439760695!2d121.24152351447964!3d24.956979947529774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346822143c046009%3A0x63e3ef21e3beebac!2z5Lit5Y6f5aSn5a246LOH6KiK566h55CG5a2457O7!5e0!3m2!1szh-TW!2stw!4v1577960165223!5m2!1szh-TW!2stw" width="450" height="450" frameborder="0" style="border-radius: 15px; margin: 30px 30px 0px 30px; float: left; " allowfullscreen=""></iframe>
+		<div class="address"><br>
+			<font size="7"><strong>ADDRESS</strong></font><br><br>
+			<font size="5" style="font-family:DFKai-sb;"><strong>320桃園市中壢區</strong></font><br>
+			<font size="5" style="font-family:DFKai-sb;"><strong>中北路200號32023號</strong></font><br><br>
+			<font size="4"><strong>200 Chung Pei Road,</strong></font><br>
+			<font size="4"><strong>Chung Li District,</strong></font><br>
+			<font size="4"><strong>Taoyuan City,</strong></font><br>
+			<font size="4"><strong>Taiwan 32023,</strong></font><br>
+			<font size="4"><strong>R.O.C.</strong></font><br>
+			<a href="https://www.instagram.com/cycuim/"><img src="..\assets\img\IG.jfif" class="fb"></a>
+			<a href="https://www.facebook.com/groups/196334640403577/"><img src="..\assets\img\FB.png" class="fb"></a>
+			<input type="button" class="IM" value="CYIM" onclick="location.href='https://uip.cycu.edu.tw/UIPWeb/wSite/mp?mp=5400'">
+		</div>
+		</div>
+
+			
+
+
+		
+    </div>
+	
+</body>
+</html>
