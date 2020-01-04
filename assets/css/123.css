@@ -1,0 +1,259 @@
+body {
+font-family:微軟黑正體;
+background-image:url(../images/bg.png);
+background-size:100% 100%;
+}
+* {
+box-sizing: border-box;
+}
+h1{
+margin-left:50px;
+}
+img.memberphoto{
+float: left;
+width: 300px;
+height: 300px;
+border-radius:999em;
+margin-left:50px;
+margin-right:70px;
+
+}
+section{
+background-color: #EED5A1;
+border: #FCC9B9 1px solid;
+width: 80%;
+margin-top: 30px;
+margin-left: 10%;
+height:600px;
+}
+
+table {
+border-collapse: separate;
+border-spacing: 0;
+width: 50%;
+border: 1px solid #4F6159;
+border-top-left-radius:1em;
+border-top-right-radius:1em;
+border-bottom-right-radius:1em;
+border-bottom-left-radius:1em;
+}
+th, td {
+text-align: left;
+font-family:"Microsoft JhengHei";
+padding: 16px;
+}
+tr:nth-child(odd) {
+background-color: #F2E4AA;
+}
+tr:nth-child(even) {
+background-color: #8C7D66;
+}
+
+.table4{
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+.table1{
+
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+.picture {
+margin: 0px auto;
+}
+.picture div {
+display: inline-block;
+vertical-align: top;
+
+
+}
+
+.imgt:hover{
+	
+    -webkit-filter: drop-shadow(8px 8px 10px #000);
+    filter: drop-shadow(8px 8px 10px #000);
+} 
+img.record{
+	position:absolute;left:13%;top:70%;
+
+	width:300px;
+}
+img.order{
+	position:absolute;left:32%;bottom:-38%;
+	width:275px;
+}
+img.cart{
+	position:absolute;right:32%;bottom:-12%;
+	width:250px;
+}
+img.continu{
+	position:absolute;right:13%;bottom:-38%;
+	width:300px;
+}
+.b1{
+    background-color: #A2ACA4;
+}
+.trading_record_table {
+    width: 90%;
+    border: 2px #ced3db solid;
+    font-size:30px;
+    margin-left: 5%;
+    background-color:#fff;
+}
+.trading_record_list {
+    width: 280px;
+    display: inline-block;
+
+}.trading_record_product {
+    height: 120px;
+    width: 80%;
+    font-size: 0.8em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.p2{
+	width:300px;
+	height:300px;
+}
+.star input:checked~label,
+.star label,
+.star label:hover,
+.star label:hover~label {
+    background: url('../img/star.png') no-repeat;
+}
+
+.star {
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.star input {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    width: 43px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.star input:checked~label {
+    background-position: 0 -40px;
+    height: 40px;
+    width: 43px;
+}
+
+.star label {
+    background-position: 0 0;
+    height: 40px;
+    width: 43px;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.star label:hover,
+.star label:hover~label {
+    background-position: 0 -40px;
+    height: 40px;
+    width: 43px;
+}
+
+.comment_record_product {
+    padding-top: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+.comment_record_product img {
+    height: 100px;
+    margin-top: 50px;
+    float: left;
+    top: 0px;
+}
+
+.product_content {
+    float: left;
+    padding-left: 20px;
+    top: 0px;
+    width: 35%;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.product_comment {
+    float: left;
+    width: calc(65% - 150px);
+}
+
+.comment_record_table {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border: 5px #ced3db solid;
+    margin-left: 2.5%;
+}
+
+.comment_text {
+    width: 100%;
+    height: 98px;
+    padding: 20px 5px 0 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #187898;
+    font-size: 16px;
+    border: 5px #b1e0ef solid;
+}
+
+.product_comment input[type="submit"] {
+    background: #f46270;
+    height: 30px;
+    width: 80px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.comment_record_title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px 0px 30px 0px;
+    border-top: 1px #b1e0ef solid;
+}
+
+.trading_record_page {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.trading_record_page a {
+    margin-left: 20px;
+}
+.order {
+    width: 150px;
+    margin-left: calc(50% - 75px);
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 788px) {
+.main {
+    margin: 0px;
+    width: 100%;
+}
+.product_content {
+    width: 230px;
+}
+
+
+.product_comment {
+    width: 90%;
+    margin-top: 10px;
+}
+
+}
+
