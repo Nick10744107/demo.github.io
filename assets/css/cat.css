@@ -1,0 +1,108 @@
+.mh2 {
+		width:140px;
+		height:60px;
+		background-color: #D13C1E;
+		position: relative;
+		border: 1px solid rgba(0,0,0,0.5);
+		transition: all 0.5s linear;
+	}
+
+	.mh2:hover {
+		border-radius: 25px;
+		transition: all 0.5s linear;    
+	}
+
+
+
+	.ly{
+		background-color:#F8DEC6;
+		width:90%;
+		height:auto; 
+		margin:10px 40px 10px 40px;
+		border-radius:10px;
+		padding: 10px;
+	}
+
+	.rating {
+    font-size: 0;
+    display: table;
+    
+}
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+.rating > label:before {
+   	padding: 5px;
+    font-size: 30px;
+    line-height: 1em;
+    display: inline-block;
+    content: "★";
+}
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #FFD700;
+}
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+    opacity: 0.5;
+}
+
+	.upitem{
+		background-color:#B78A6E;
+		width:80%;
+		height:auto; 
+		margin:10px 0px 0px 135px;
+		padding-bottom: 10px;
+	}
+	.downitem{
+		background-color:#CD813F;
+		width:80%;
+		height:auto; 
+		margin:10px 0px 0px 135px;
+	}
+	.itempic{
+		background-color:#B78A6E;
+		float: left;
+		width:500px;
+		height:500px;
+
+	}
+
+hr.style-three {
+    border: 0;
+    border-bottom: 3px dashed black;
+    background: #999;
+}
+
+
+
+	.qty {
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+
+input.qtyplus {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: white;
+}
+
+input.qtyminus {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: white;
+}
+
+.checked {
+  color: orange;
+}
