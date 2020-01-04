@@ -1,0 +1,167 @@
+#header {
+  background-color: #D8D2BC;
+  padding: 10px;
+  text-align: center;
+  font-family: 微軟正黑體;
+}
+.pic{width:348px; 
+    height:348px;
+    overflow:hidden;}
+.pic img{transform:scale(1,1);
+  transition: all 1s ease-out;
+}
+.pic img:hover{transform:
+            scale(1.2,1.2);}
+.pic1{
+  width: 10%;
+  height:10%;
+  text-align: center;
+}
+.piccar{
+  width: 3.5%;
+  height:5%;
+  float: right ;
+  position: absolute;
+  left: 91%;
+  top:10.5%;
+}
+.picmember{
+  width: 75%;
+  height:50%;
+}
+.piclogin{
+   width:auto;
+   height:auto;
+   position: absolute;
+   left: 95%;
+   top:8.60%;
+}
+.txt{
+  width: 1920px;
+  height: 480px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: 微軟正黑體;
+}
+
+li {
+  float: left;
+  font-size: 30px
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.spider{
+  width:348px;
+  height: 348px:;
+}
+.p1{
+  font-family: 微軟正黑體;
+  font-size: 50px;
+  background-color: #90CE78;
+}
+.footer{
+  width: 100%;
+  height:100px;
+  background-color: #CCA06F;
+  color:#634A1C;
+  text-align: center;
+  font-size:30px;
+}
+.cat{
+  width: 10%;
+  height: 20%;
+  
+}
+p{
+  color:white;
+  font-size: 20px;
+}
+.smalltd1{
+  font-size: 20px;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+.smalltd2{
+  padding: 20px;
+  width:500px;
+  padding-bottom: 0px;
+}
+.inputtext{
+  font-size: 20px;
+  border: solid 1px #808080;
+  border-radius: 5px;
+  padding: 10px;
+  width: 500px;
+}
+.checkmsg{
+  color: red;
+  font-size: 16px;
+  padding: 20px;
+}
+.registbtn{
+  font-size: 24px;
+  color:white;
+  background:rgb(172,1,55);
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align:center;
+  float: left;
+}
+.returnbtn{
+  font-size: 24px;
+  color:white;
+  background:rgb(172,1,55);
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align:center;
+  float: right;
+}
+.sexselect{
+  font-size: 20px;
+  border: solid 1px #808080;
+  border-radius: 5px;
+  padding: 10px;
+  width:200px; 
+  height:50px;
+}
+.checkboxstyle{
+  font-size: 20px;
+  border: solid 1px #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+.slideshow-container {
+  width: 1900px;
+  position: relative;
+  margin: auto;
+}
+.b2{
+  text-align: center;
+  margin-top: 85px;
+}
+.container-cat {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
