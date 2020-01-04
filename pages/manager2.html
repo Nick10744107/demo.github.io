@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="..\assets\css\456.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\member.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\bb.css">
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+	</style>
+</head>
+<body>
+	<body>
+	<!--HEAD start-->
+	<header>
+		<div id="header">
+			<a href="..\index.html">
+			 <img src="..\assets\img\shield.png" class="pic1">
+		    </a>
+		    <!--購物車 start--> 
+		    <a href="shopcar.html">
+		        <img src="..\assets\img\shopcar.png" class="piccar">
+		    </a>
+		    <!--會員登入 start-->
+            <div class="piclogin">
+		      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+		      	<img src="..\assets\img\member.png" class="picmember">
+		      </button>
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php" method="post">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				      <img src="..\assets\img\member.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container">
+				      <label for="uname"><b>使用者名稱</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>密碼</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit"><a href="member.html"  style="color: black">登入</a></button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> 記得我
+				      </label>
+				      <span class="psw">忘記 <a href="modify.html">密碼?</a></span>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1">
+				      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取消</button>
+				       <button type="button" onclick="document.getElementById('id01').style.display='block'" class="signupbtn"> <a href="sign.html"style="color:white;">加入會員</a></button>
+					</div>
+				  </form>
+				</div>
+
+				<script>
+				// Get the modal
+				var modal = document.getElementById('id01');
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				    if (event.target == modal) {
+				        modal.style.display = "none";
+				    }
+				}
+				</script>
+				 <!--會員登入 END-->
+			</div>	
+    </header>
+    <!--head END-->
+
+    <div>
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+	  		  	<a class="nav-link" href="index.html">首頁</a>
+	  		  </li>
+			<li class="nav-item">
+	 	      	<a class="nav-link" href="member.html">會員</a>
+	 	      </li>
+	 	      <li class="nav-item">
+	 	      	<a class="nav-link" href="item.html">商品</a>
+	 	      </li>
+	  		  <li class="nav-item">
+	  		  	<a class="nav-link" href="#">關於我們</a>
+	  		  </li>
+	  		  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				  <form class="form-inline" action="/action_page.php">
+				    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+				    <button class="btn btn-success" type="submit">Search</button>
+	              </form>
+             </nav>
+		</ul>
+	</div>
+	 <div class="container">
+		<div>
+			<h1>瀏覽訂單</h1>
+		</div>
+		<table style="width: 50%" align="center">
+				
+				<tr>
+					
+		
+					<th style="width:18%" >姓名</th>
+					<th style="width:18%" >使用者名稱</th>
+					<th style="width:22%" >地址</th>
+					<th>手機號碼</th>
+					<th style="width:25%">卡名</th>
+					<th style="width:25%">卡號</th>
+					<th style="width:80%">店名</th>
+					<th >商品</th>
+					<th>數量</th>
+					<th>總價</th>
+					<th>日期</th>
+					<th>Note</th>
+
+		   
+     	 	
+				</tr>
+				<tr>
+					<td ><!--rname--></td>
+					<td ><!--uname--></td>
+					<td ><!--address--></td>
+					<td ><!--phone--></td>
+					<td ><!--cardName--></td>
+					<td><!--cardNumber--></td>
+					<td ><!--storeAddress--></td>
+					<td ><!--item--></td>
+					<td ><!--item_quan--></td>
+					<td ><!--total--></td>
+					<td ><!--date--></td>
+					<td ><!--no--></td>
+				</tr>
+				<tr>
+					<td ><!--rname--></td>
+					<td ><!--uname--></td>
+					<td ><!--address--></td>
+					<td ><!--phone--></td>
+					<td ><!--cardName--></td>
+					<td><!--cardNumber--></td>
+					<td ><!--storeAddress--></td>
+					<td ><!--item--></td>
+					<td ><!--item_quan--></td>
+					<td ><!--total--></td>
+					<td ><!--date--></td>
+					<td ><!--no--></td>
+				</tr>
+				<tr>
+					<td ><!--rname--></td>
+					<td ><!--uname--></td>
+					<td ><!--address--></td>
+					<td ><!--phone--></td>
+					<td ><!--cardName--></td>
+					<td><!--cardNumber--></td>
+					<td ><!--storeAddress--></td>
+					<td ><!--item--></td>
+					<td ><!--item_quan--></td>
+					<td ><!--total--></td>
+					<td ><!--date--></td>
+					<td ><!--no--></td>
+				</tr>
+				<tr>
+					<td ><!--rname--></td>
+					<td ><!--uname--></td>
+					<td ><!--address--></td>
+					<td ><!--phone--></td>
+					<td ><!--cardName--></td>
+					<td><!--cardNumber--></td>
+					<td ><!--storeAddress--></td>
+					<td ><!--item--></td>
+					<td ><!--item_quan--></td>
+					<td ><!--total--></td>
+					<td ><!--date--></td>
+					<td ><!--no--></td>
+				</tr>
+				<tr>
+					<td ><!--rname--></td>
+					<td ><!--uname--></td>
+					<td ><!--address--></td>
+					<td ><!--phone--></td>
+					<td ><!--cardName--></td>
+					<td><!--cardNumber--></td>
+					<td ><!--storeAddress--></td>
+					<td ><!--item--></td>
+					<td ><!--item_quan--></td>
+					<td ><!--total--></td>
+					<td ><!--date--></td>
+					<td ><!--no--></td>
+				</tr>
+				<tr>
+					<td ><!--rname--></td>
+					<td ><!--uname--></td>
+					<td ><!--address--></td>
+					<td ><!--phone--></td>
+					<td ><!--cardName--></td>
+					<td><!--cardNumber--></td>
+					<td ><!--storeAddress--></td>
+					<td ><!--item--></td>
+					<td ><!--item_quan--></td>
+					<td ><!--total--></td>
+					<td ><!--date--></td>
+					<td ><!--no--></td>
+				</tr>
+				<tr>
+					<td ><!--rname--></td>
+					<td ><!--uname--></td>
+					<td ><!--address--></td>
+					<td ><!--phone--></td>
+					<td ><!--cardName--></td>
+					<td><!--cardNumber--></td>
+					<td ><!--storeAddress--></td>
+					<td ><!--item--></td>
+					<td ><!--item_quan--></td>
+					<td ><!--total--></td>
+					<td ><!--date--></td>
+					<td ><!--no--></td>
+				</tr>
+</body>
+</html>
