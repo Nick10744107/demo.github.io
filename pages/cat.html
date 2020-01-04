@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\456.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\member.css">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\cat.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script>
+	function del(){
+	var num=parseInt($('#quantity').text())-1;
+	if(num<1){
+	$('#quantity').text(1);
+	}else{
+	$('#quantity').text(num);
+	}
+	}
+	function add(){
+	var num=parseInt($('#quantity').text())+1;
+	$('#quantity').text(num);
+	}
+	</script>
+
+
+
+ 
+
+	<title>貓咪</title>
+</head>
+<body>
+	<!--HEAD start-->
+	<header>
+		<div id="header">
+			<a href="..\index.html">
+			 <img src="..\assets\img\shield.png" class="pic1">
+		    </a>
+		    <!--購物車 start--> 
+		    <a href="shopcar.html">
+		        <img src="..\assets\img\shopcar.png" class="piccar">
+		    </a>
+		    <!--會員登入 start-->
+            <div class="piclogin">
+		      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+		      	<img src="..\assets\img\member.png" class="picmember">
+		      </button>
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php" method="post">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				      <img src="..\assets\img\member.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container">
+				      <label for="uname"><b>使用者名稱</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>密碼</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit">登入</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> 記得我
+				      </label>
+				      <span class="psw">忘記 <a href="#">密碼?</a></span>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1">
+				      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取消</button>
+				       <button type="button" onclick="document.getElementById('id01').style.display='block'" class="signupbtn"> <a href="sign.html"style="color:white;">加入會員</a></button>
+
+					</div>
+				  </form>
+				</div>
+
+				<script>
+				// Get the modal
+				var modal = document.getElementById('id01');
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				    if (event.target == modal) {
+				        modal.style.display = "none";
+				    }
+				}
+				</script>
+				 <!--會員登入 END-->
+			</div>	
+    </header>
+    <!--head END-->
+
+    <div>
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+	  		  	<a class="nav-link" href="..\index.html">首頁</a>
+	  		  </li>
+			<li class="nav-item">
+	 	      	<a class="nav-link" href="member.html">會員</a>
+	 	      </li>
+	 	      <li class="nav-item">
+	 	      	<a class="nav-link" href="item.html">商品</a>
+	 	      </li>
+	  		  <li class="nav-item">
+	  		  	<a class="nav-link" href="aboutus.html">關於我們</a>
+	  		  </li>
+	  		  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				  <form class="form-inline" action="/action_page.php">
+				    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+				    <button class="btn btn-success" type="submit">Search</button>
+	              </form>
+             </nav>
+		</ul>
+	</div>
+	<!--商品 start-->
+	<div class="upitem">
+		<!--左邊圖片-->
+		<div class="itempic">
+			<img src="..\assets\img\cat.png" class="card-img-top">
+		</div>
+		<!--右邊資料-->
+		<font size="7"><strong>小貓</strong></font><br>
+		<hr class="style-three"/>
+		<font size="6">最新推出可愛貓咪手機殼</font><br><br>
+		<font size="5">型號:AA1254897131</font><br><br>
+		<font size="5">庫存:23</font><br><br>
+		<font size="5">商品評價</font>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span>
+		<span class="fa fa-star"></span>
+		<br><br>
+		<font size="5">價格:250 NTD</font><br><br>
+		<font size="5">購買數量:</font>
+		<!--購買數量加減-->
+		<input type="button" value="-" id="del" onclick="del()"/>
+		<span id="quantity">1</span>
+		<input type="button" value="+" id="add" onclick="add()"/>
+		<br><br>
+		<!--購買按鈕-->
+		<input type="button" value="立即購買" class="mh2" onclick="location.href='要前往的網頁連結'">
+		<input type="button" value="加入購物車" class="mh2" onclick="location.href='要前往的網頁連結'">		
+	</div>
+	<!--商品 end-->
+
+	<!--評論1 start-->
+	<div class="downitem">
+	
+	<div style="padding-left:15px; padding-top: 15px;">
+	<div class="ly">
+		<font size="6">TNG123456</font>  <!--用戶名-->
+		<span class="fa fa-star checked"></span> <!--星星評價-->
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span>
+		<span class="fa fa-star"></span><br>
+		<font size="5">Hey&nbsp;baby&nbsp;where&nbsp;you&nbsp;wanna&nbsp;go</font><!--留言-->
+
+	</div>
+	<!--評論1 end-->
+
+	<!--評論2 start-->
+	<div class="ly">
+		<font size="6">C-HA&nbsp;President</font> <!--用戶名-->
+		<span class="fa fa-star checked"></span> <!--星星評價-->
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span><br>
+		<font size="5">boom&nbsp;bap&nbsp;boom&nbsp;bap</font> <!--留言-->
+	</div>
+	<!--評論2 end-->
+	
+	<!--評分區 start-->
+	<font size="3"><strong>評價</strong></font>
+	<div class="rating"> <!--星星評分-->
+		<input type="radio" id="star5" name="rating" value="5" hidden>
+		<label for="star5"></label>
+		<input type="radio" id="star4" name="rating" value="4" hidden>
+		<label for="star4"></label>
+		<input type="radio" id="star3" name="rating" value="3" hidden>
+		<label for="star3"></label>
+		<input type="radio" id="star2" name="rating" value="2" hidden>
+		<label for="star2"></label>
+		<input type="radio" id="star1" name="rating" value="1" hidden>
+		<label for="star1"></label>
+	</div>
+
+	<font size="3"><strong>評論</strong></font><br>
+		<form>			
+			<textarea name="memo" cols="30" rows="5" wrap="hard"> </textarea><br> <!--評論欄-->			
+		
+		<!--評論按鈕-->
+		<input type="submit" name="send" value="送出">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 		<input type="reset" name="rewrite" value="重寫">
+ 		</form>
+	</div>
+	<!--評分區 end-->
+
+	</div>
+</div>	
+</body>
+</html>
