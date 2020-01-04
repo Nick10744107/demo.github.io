@@ -1,0 +1,66 @@
+	.member1{
+		width: 900px;
+		height: 250px;
+		margin: auto;
+		margin-top: 10px;
+		background-color:#C1FFE4;
+		border-radius: 15px;
+
+	}
+	.member2{
+		width: 900px;
+		height: 250px;
+		margin: 25px 270px 0px 270px;
+		background-color:#FFD2D2;
+		border-radius: 15px;
+	}
+	.myselfpic{
+		width: 200px;
+		height: 200px;
+		border-radius: 15px;
+		margin:25px 15px 0px 15px;
+		float: left;
+	}
+	
+	}
+	.address{
+
+		margin: 30px 30px 0px 0px;
+		padding-top: 10px;
+		
+	}
+
+	.map{
+		width: 900px;
+		height: 500px;
+		margin: auto;
+		margin-top: 10px;
+		background-color: white;
+		border-radius: 15px;
+
+	}
+	.ig{
+		width: 35px;
+		height: 35px;
+		margin: 0px 10px 10px 10px;
+		border-radius: 10px;
+		float: right;
+	}
+	.fb{
+		width: 50px;
+		height: 50px;
+		margin: 0px 10px 10px 10px;
+		border-radius: 10px;
+		float: right;
+	}
+
+	.IM{
+		width: 50px;
+		height: 50px;
+		margin: 0px 10px 10px 10px;
+		border-radius: 10px;
+		float: right;
+		background-color: #80FFFF;
+	}
+
+
